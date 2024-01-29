@@ -1,0 +1,10 @@
+Desafio =01=
+Crie um script python que leia o nome de uma pessoa e de uma mensagem de boas vindas !
+
+Desafio =02=
+
+Crie um script python que leia dia, mes e o ano de nascimento de uma pessoa e mostre a data formatada 
+
+Desafio =03=
+
+Crie um script python que leia dois numeros e mostre a soma entre eles 
