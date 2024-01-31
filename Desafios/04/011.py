@@ -4,9 +4,10 @@ quantidade de tinta necessaria para pinta-la ,
 sabendo que cada litro de tinta pinta uma area de 2m²
 """
 
+largura = float(input('Agora digite a largura de sua parede')) 
+
 altura = float(input('Digite a altura de sua parede'))
 
-largura = float(input('Agora digite a largura de sua parede'))
 
 qtd_tinta = (altura * largura) / 2
 
