@@ -1,0 +1,34 @@
+Desafio 022
+Crie um programa que leia o nome complet de uma passoa e mostre:
+    . O nome com todas as letras maiúsculas
+    . O nome com todas minúsculas
+    . Quantas letras ao todo (sem considrar os espaços)
+    . Quantas letras tem o primeiro nome
+
+Desafio 023
+Faça um programa que leia número de 0 a 9999 e mostre na tela cada um dos digitos separados
+
+Ex : Digite um número: 1834
+
+unidade: 4
+dezena : 3
+centena : 8
+milhar : 1
+
+Desafio 024
+Crie um programa que leia o nome de uma cidade e diga se ela começa ou não com o nome 'SANTO'
+
+Desafio 025
+Crie um programa que leia o nome de uma pessoa e diga se ela tem 'Silva' em seu nome
+
+026 
+Faça um programa que leia a frase pelo teclado e mostre :
+    . Quantas vezes aparece a letra "A"
+    . Em que posição ela aparece a primeira vez
+    . Em que posição ela aparece a última vez
+
+Desafio 027
+Faça um programa que leia o nome completo de uma pessoa, mostrando em seguida o primeiro e o ultimo nome sepadaramente
+    Ex : Ana Maria de Souza
+    primeiro = Ana
+    ultimo = Souza
