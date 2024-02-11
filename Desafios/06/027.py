@@ -4,7 +4,7 @@ Faça um programa que leia o nome completo de uma pessoa, mostrando em seguida o
     primeiro = Ana
     ultimo = Souza """
 
-name = input('Digite seu nome completo : ')
+name = str(input('Digite seu nome completo : ')).strip()
 
 new_name = name.split()
 
@@ -12,4 +12,4 @@ print (f'Seu nome completo e {name}')
 
 print (f'O seu primeiro nome e : {new_name[0]}')
 
-print (f'O seu ultimo nome sera : {new_name[-1]}')
+print (f'O seu ultimo nome sera : {new_name[len(new_name)-1]}')

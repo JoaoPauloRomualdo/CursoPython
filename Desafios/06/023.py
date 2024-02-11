@@ -8,7 +8,15 @@ dezena : 3
 centena : 8
 milhar : 1 """
 
-number = input('Digite um numero inteiro qualquer')
-
+number = int(input('Digite um numero inteiro qualquer : '))
+unidade = number // 1 % 10
+dezena = number // 10 % 10
+centena = number // 100 % 10
+milhar = number // 1000 % 10
+print(f'Analisando o número: {number}')
+print(f'Unidade :{unidade}')
+print(f'Dezena : {dezena}')
+print(f'Centena : {centena}')
+print(f'Milhar : {milhar}')
 
 print(number.split())
