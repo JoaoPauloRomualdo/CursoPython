@@ -1,0 +1,38 @@
+Desafio 028
+
+Escreva um programa que faça o computador 'pensar' em um número inteiro entre 0 e 5 e peça para o usúario tentar descobrir qual foi o número escolhido pelo computador
+    .o programa deverá escrever na tela se o usúario venceu ou perdeu
+
+Desafio 029
+
+Escreva um programa que leia a velocidade de um carro 
+    .se ele ultrapassar 80Km/h mostre uma mensagem dizendo que ele foi multado 
+
+    .a multa vai custar R$ 7,00 por cada km acima do limite
+
+Desafio 030
+
+Crie um programa que leia um número inteiro e mostre na tela se ele é par ou impar
+
+Desafio 031
+
+Desenvolva um programa que pergunte a distancio de uma viagem em Km . Calcule o preço da passagem cobrando R$ 0,50 por km para viagen até 200Km e R$ 0,45 para viagens mais longas
+
+Desafio 032 
+
+Faça um programa que leia um ano qualquer e mostre se ele e bissexto
+
+Desafio 033
+
+Faça um programa que leia três números e mostre qual e o maior e qual e o menor .
+
+Desafio 034
+
+Escreva um programa que pergunte o salário de um funcionário e Calcule o valor do seu aumento
+
+    .Para salários superiores a R$1250,00 calcule um aumento de 10%
+    .Para os inferiores ou iguais o aumento é de 15%
+
+Desafio 035
+
+Desenvolva um programa que leia o comprimentro de tres retas e diga ao usúario se elas podem ou não fomar um triangulo 
