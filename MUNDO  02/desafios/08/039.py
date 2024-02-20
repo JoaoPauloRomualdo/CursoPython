@@ -15,7 +15,7 @@ year = int(input('Digite o ano em que você nasceu : '))
 
 
 new_year = current_year - year
-
+#Verifica a idade
 if new_year == 18 :
     print(f'{colors["red_color"]} Fique atento você ja tem {new_year} anos o alistamento militar e OBRIGATORIO o prazo para o alistamento militar obrigatório termina em 30 de junho {colors["reset"]}')
 elif new_year == 17 and new_year <= 18  :
