@@ -2,8 +2,6 @@
     Faça um programa que leia o ano de nascimento de um jovem e informe, de acordo com a sua idade, se ele ainda vai se alistar ao serviço militar, se é a hora exata de se alistar ou se já passou do tempo do alistamento. Seu programa também deverá mostrar o tempo que falta ou que passou do prazo. """
 from datetime import datetime
 
-current_year = datetime.now().year
-year = int(input('Digite o ano em que você nasceu : '))
 
 colors = {
     'reset' : '\033[m',
@@ -11,6 +9,10 @@ colors = {
     'blue_color': '\033[1;30;46m',
     'yellow_color' : '\033[1;30;43m'
 }
+
+current_year = datetime.now().year
+year = int(input('Digite o ano em que você nasceu : '))
+
 
 new_year = current_year - year
 
