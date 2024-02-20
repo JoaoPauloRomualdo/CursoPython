@@ -14,10 +14,6 @@ def hexadecimal (number):
     hexa = hex(number)
     print(f'O número digitado foi {number}, sua conversão para base OCTAL : {hexa}')
 
-def all(number):
-    all = [binario, octal,hexadecimal]
-    print(all)
-
 def menu() :        
     print('='*40)
     print('Olá Bem vindo ao nosso sistema de conversão de números\n BINARIOS , OCTAL E HEXADECIMAL')
@@ -30,13 +26,15 @@ def menu() :
         print('[1] - BINÁRIO')
         print('[2] - OCTAL')
         print('[3] - HEXADECIMAL')
-
+        
         opcao = int(input('Digite a opção desejada : '))
 
         if opcao == 1 :
             binario(number)
-        elif opcao == 4:
-            all(number)
+        elif opcao == 2 :
+            octal(number)
+        elif opcao == 3 :
+            hexadecimal (number)
         else :
             break
 
