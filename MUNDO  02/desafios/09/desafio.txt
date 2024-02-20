@@ -1,0 +1,38 @@
+Desafio 046
+
+Faça um programa que mostre na tela uma contagem regressiva para estouro de fogos de artifio inde de 10 ate 0 com uma pausa de um segundo entre eles.
+
+Desafio 047
+Crie um programa que mostre na tela tods os números pares que estão no intervalo entre 1 a 50
+
+
+Desafio 048
+Faça um programa que calucle a soma entre todos os numeros impares que sao multiplos de tres e que se encontram no intervalo de 1 ate 500
+
+Desafio 047
+Refaça o Desafio 009 , mostrando a tabuado de um número que o usuario escolher . so que a gora utilizando um laço for
+
+Desafio 050
+Desenvolva um programa que leia seis numeros inteiros e mostre a soma apenas daqueles que forem pares se o valor digitado for impar desconsidere-o
+
+Desafio 051
+Desenvolva um programa que leia o primeiro termo e a razao de uma PA.no final mostre 10 primeiros termos dessa progressão
+
+052
+Faça um programa que leia um numero inteiro e diga se ele e ou nao um numero primo
+
+053
+Crie um programa que leia uma frase qualquer e diga se ela e uma palindroma desiderando os espaços .
+Ex: Apos a sopa, são palavras que sao lidas de tras pra frente e sao a mesma coisa 
+
+054
+Crie um programa que leia o ano de nascimento de sete pessoas. No final mostre quantas pessoas ainda não atingiram a maoiridade e quantas ja são maiores 
+
+055
+Faça um programa que leia o peso de cinco pessoas .No final mostre qual foi o maior e o menor pesso lidos.
+
+056
+Desenvolva um programa que leia o nome, idade e sexo de 4 pessoas . No final do programa mostre :
+    .A media de idade do grupo
+    .Qual e o nome do homem mais velhor
+    .Quantos mulheres tem menos de 20 anos
