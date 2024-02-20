@@ -37,10 +37,10 @@ def menu():
         print('-'*20)
         print()
         preco = float(input('Iforme o valor do produto a ser comprado : '))
-        print('[1] - À vista dinheiro/cheque: 10% de desconto')
-        print('[2] - À vista no cartão: 5% de desconto')
-        print('[3] - Em até 2x no cartão: preço formal')
-        print('[4] - 3x ou mais no cartão: 20% de juros ')
+        print('[ 1 ] - À vista dinheiro/cheque: 10% de desconto')
+        print('[ 2 ] - À vista no cartão: 5% de desconto')
+        print('[ 3 ] - Em até 2x no cartão: preço formal')
+        print('[ 4 ] - 3x ou mais no cartão: 20% de juros ')
         print()
         opcao = int(input('Digite a opção desejada : '))
 
@@ -49,8 +49,8 @@ def menu():
             
             print('DESEJA REALIZAR OUTRA SIMULAÇÃO ? : ')
             print()
-            print('[1] - SIM ')
-            print('[2] - NÃO')
+            print('[ 1 ] - SIM ')
+            print('[ 2 ] - NÃO')
             resposta = int(input('DIGITE A OPÇÃO DESEJADA : '))
             
             if resposta == 1 :
