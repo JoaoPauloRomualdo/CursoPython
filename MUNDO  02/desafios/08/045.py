@@ -1,45 +1,94 @@
-""" Exercício Python 045: 
-    Crie um programa que faça o computador jogar Jokenpô com você. """
-import random
+from random import randint
 
 
-def jogar_jokenpo(escolha):
-    opcoes = [1,2,3]
-    maquina = random.choice(opcoes)
-    if escolha == 1 :
-        print(f'Você escolheu : {escolha} pedra')
-        print(f'O computador escolheu : {maquina}')
-    elif escolha == 2 :
-        print(f'Você escolheu : {escolha} papel')
-        print(f'O computador escolheu : {maquina}')
-    elif escolha == 3:
-        print(f'Você escolheu : {escolha} tesoura')
-        print(f'O computador escolheu : {maquina}')
 
-        if escolha == maquina :
-            print(f'Você escolheu {escolha} e o computador {maquina} deu EMPATE')
-        
-        elif (escolha == 1 and maquina == 3) or \
-            (escolha == 2 and maquina == 1) or \
-            (escolha == 3 and maquina == 2):
-            print("Você ganhou!")
+def jogar(itens, computador,jogador):
+    if computador == 0 : #COMPUTADOR JOGOU PEDRA
+        if jogador == 0:
+            print('-='*11)
+            print('EMPATE')
+            print(f'COMPUTADOR JOGOU {itens[computador]}')
+            print(f'JOGADOR JOGOU PEDRA')
+            print('-='*11)
+        elif jogador == 1 :
+            print('-='*11)
+            print('JOGADOR VENCEU')
+            print(f'COMPUTADOR JOGOU {itens[computador]}')
+            print(f'JOGADOR JOGOU PAPEL')
+            print('-='*11)
+        elif jogador ==2:
+            print('-='*11)
+            print('COMPUTADOR VENCEU')
+            print(f'COMPUTADOR JOGOU {itens[computador]}')
+            print(f'JOGADOR JOGOU TESOURA')
+            print('-='*11)
         else:
-            print('Voce perdeu')
+            print('JOGADA INVALIDA')
 
-while True:
-    print("="* 30)
-    print('BEM VINDO AO JOKENPÔ')
-    print("="* 30)
-    print('Escolha uma dessas opções para você jogar : ')
-    print(f'[1] - Pedra ')
-    print(f'[2] - Papel ')
-    print(f'[3] - Tesoura ')
-    print('[4] - Sair ')
-    escolha = int(input('Digite a opção desejada : '))
-    if escolha == 4 :
-        print('Obrigado por jogar')
-        break
-    if escolha not in [1,2,3]:
-        continue
-    
-    jogar_jokenpo(escolha)
+    elif computador == 1 : #COMPUTADOR JOGOU PAPEL
+        if jogador == 0:
+            print('-='*11)
+            print('COMPUTADOR VENCEU')
+            print(f'COMPUTADOR JOGOU {itens[computador]}')
+            print(f'JOGADOR JOGOU PEDRA')
+            print('-='*11)
+        elif jogador == 1 :
+            print('-='*11)
+            print('EMPATE')
+            print(f'COMPUTADOR JOGOU {itens[computador]}')
+            print(f'JOGADOR JOGOU PAPEL')
+            print('-='*11)
+        elif jogador ==2:
+            print('-='*11)
+            print('JOGADOR VENCEU')
+            print(f'COMPUTADOR JOGOU {itens[computador]}')
+            print(f'JOGADOR JOGOU TESOURA')
+            print('-='*11)
+        else:
+            print('JOGADA INVALIDA')
+    elif computador == 2 : #COMPUTADOR JOGOU TESOURA
+        if jogador == 0:
+            print('-='*11)
+            print('JOGADOR VENCEU')        
+            print(f'COMPUTADOR JOGOU {itens[computador]}')
+            print(f'JOGADOR JOGOU PEDRA')
+            print('-='*11)
+        elif jogador == 1 :
+            print('-='*11)
+            print('COMPUTADOR VENCEU')        
+            print(f'COMPUTADOR JOGOU {itens[computador]}')
+            print(f'JOGADOR JOGOU PAPEL')
+            print('-='*11)
+        elif jogador ==2:
+            print('-='*11)
+            print('EMPATE')
+            print(f'COMPUTADOR JOGOU {itens[computador]}')
+            print(f'JOGADOR JOGOU TESOURA')
+            print('-='*11)
+        else:
+            print('JOGADA INVALIDA')
+
+
+def menu():
+    while True:
+        itens = ['PEDRA', 'PAPEL', 'TESOURA']
+        computador = randint(0,2)
+        print('-='*20)
+        print('''Escolha sua jogada :\n 
+        [ 0 ] - PEDRA\n      
+        [ 1 ] - PAPEL\n
+        [ 2 ] - TESOURA\n    
+        [ 3 ] - SAIR
+        ''')
+        print('-='*20)
+        jogador = int(input('QUAL E SUA JOGADA ? : '))
+        if jogador == 0 :
+            return jogar(itens, computador,jogador)
+            
+        elif jogador == 1 :
+            return jogar(itens, computador,jogador)
+        elif jogador == 2 :
+            return jogar(itens, computador,jogador)
+        elif jogador == 4:
+            break
+menu()
