@@ -17,6 +17,7 @@ def cinco_anos(salario,valor_casa):
         print(f'SALARIO INFORMADO FOI {locale.currency(salario, grouping=True)}')
         print(f'\033[1;30;43mPARABÉNS !!! SEU FINANCIAMENTO FOI APROVADO COM PARCELAS DE {locale.currency(parcela_mes, grouping=True)} AO MES POR 5 ANOS\033[m')
     else :
+        print(f'SALARIO INFORMADO FOI {locale.currency(salario, grouping=True)}')
         print(f'\033[1;30;41mPRECISAMOS INFORMAR QUE INFELIZMENTE SUAS CONDIÇÕES NÃO SE ENQUADRA EM NOSSAS CONDIÇÕES\033[m')
 
 
@@ -30,6 +31,7 @@ def dez_anos(salario,valor_casa):
         print(f'\033[1;30;43mSALARIO INFORMADO FOI {locale.currency(salario, grouping=True)}\033[m')
         print(f'\033[1;30;43mPARABÉNS !!! SEU FINANCIAMENTO FOI APROVADO COM PARCELAS DE {locale.currency(parcela_mes, grouping=True)} AO MES POR 10 ANOS\033[m')
     else :
+        print(f'SALARIO INFORMADO FOI {locale.currency(salario, grouping=True)}')
         print(f'\033[1;30;41mPRECISAMOS INFORMAR QUE INFELIZMENTE SUAS CONDIÇÕES NÃO SE ENQUADRA EM NOSSAS CONDIÇÕES\033[m')
 
 def quinze_anos(salario,valor_casa):
@@ -42,6 +44,7 @@ def quinze_anos(salario,valor_casa):
         print(f'\033[1;30;43mSALARIO INFORMADO FOI {locale.currency(salario, grouping=True)}\033[m')
         print(f'\033[1;30;43mPARABÉNS !!! SEU FINANCIAMENTO FOI APROVADO COM PARCELAS DE {locale.currency(parcela_mes, grouping=True)} AO MES POR 15 ANOS\033[m')
     else :
+        print(f'SALARIO INFORMADO FOI {locale.currency(salario, grouping=True)}')
         print(f'\033[1;30;41mPRECISAMOS INFORMAR QUE INFELIZMENTE SUAS CONDIÇÕES NÃO SE ENQUADRA EM NOSSAS CONDIÇÕES\033[m')
 
 def custom(salario,valor_casa):
@@ -58,7 +61,8 @@ def custom(salario,valor_casa):
                 print(f'\033[1;30;43mSALARIO INFORMADO FOI {locale.currency(salario, grouping=True)}\033[m')
                 print(f'\033[1;30;43mPARABÉNS !!! SEU FINANCIAMENTO FOI APROVADO COM PARCELAS DE {locale.currency(parcela_mes, grouping=True)} AO MES POR {anos} ANOS\033[m')
         else :
-                 print(f'\033[1;30;41mPRECISAMOS INFORMAR QUE INFELIZMENTE SUAS CONDIÇÕES NÃO SE ENQUADRA EM NOSSAS CONDIÇÕES\033[m')
+                print(f'SALARIO INFORMADO FOI {locale.currency(salario, grouping=True)}')
+                print(f'\033[1;30;41mPRECISAMOS INFORMAR QUE INFELIZMENTE SUAS CONDIÇÕES NÃO SE ENQUADRA EM NOSSAS CONDIÇÕES\033[m')
 
     else:
         print('\033[1;30;41mLAMENTAMOS INFORMAR MAS REALIZAMOS FINANCIAMENTO SOMENTE ACIMA DE 15 ANOS')
