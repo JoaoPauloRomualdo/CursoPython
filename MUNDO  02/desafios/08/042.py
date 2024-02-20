@@ -9,7 +9,12 @@ second_line = float(input('Digite o valor da segunda reta : '))
 third_line = float(input('Digite o valor da terceira reta : '))
 
 if first_line < second_line + third_line and second_line < first_line + third_line and third_line < first_line + second_line :
-    print('As restas acima PODEM FORMAR UM TRIANGULO')
-
+    print('As restas acima PODEM FORMAR UM TRIANGULO, ', end='')
+    if first_line == second_line == third_line :
+        print('Forma um TRIANGULO EQUILÁTERO:')
+    elif first_line != second_line != third_line != first_line:
+        print('Forma um TRIANGULO ESCALENO')
+    else :
+        print('Forma um TRIANGULO ISÓSCELES')
 else :
     print('As retas acima NÃO PODEM FORMAR UM TRIANGULO')
