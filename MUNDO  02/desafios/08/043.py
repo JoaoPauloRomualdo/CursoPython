@@ -16,11 +16,11 @@ print('CALCULADORA DE I M C ')
 print('='*50)
 print()
 
-height = float(input('Digite sua altura CM : '))
-
 weight = float(input('Informe seu peso KG: '))
 
-imc = round(weight / pow(height /100, 2),2)
+height = float(input('Digite sua altura CM : '))
+
+imc = round(weight / (height ** 2),1)
 
 print("-"* 20)
 print('TABELA DO IMC')
