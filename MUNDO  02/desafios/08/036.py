@@ -20,7 +20,6 @@ def cinco_anos(salario,valor_casa):
         print(f'SALARIO INFORMADO FOI {locale.currency(salario, grouping=True)}')
         print(f'\033[1;30;41mPRECISAMOS INFORMAR QUE INFELIZMENTE SUAS CONDIÇÕES NÃO SE ENQUADRA EM NOSSAS CONDIÇÕES\033[m')
 
-
 def dez_anos(salario,valor_casa):
         #Calcula o valor das parcelas por mes
     parcela_mes = valor_casa / (10*12)
