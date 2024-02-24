@@ -9,7 +9,7 @@ Crie um programa que mostre na tela tods os números pares que estão no interva
 Desafio 048
 Faça um programa que calucle a soma entre todos os numeros impares que sao multiplos de tres e que se encontram no intervalo de 1 ate 500
 
-Desafio 047
+Desafio 049
 Refaça o Desafio 009 , mostrando a tabuado de um número que o usuario escolher . so que a gora utilizando um laço for
 
 Desafio 050
