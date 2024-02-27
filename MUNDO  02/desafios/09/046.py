@@ -7,7 +7,7 @@ print("-="*20)
 print('Se preparem para os fogos de artificio')
 print("-="*20)
 
-for i in range(10,0, -1):
+for i in range(10,-1, -1):
     time.sleep(1)
     print(i)
 print('''✷ 　 　　 　 ·

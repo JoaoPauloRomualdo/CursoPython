@@ -34,5 +34,5 @@ Faça um programa que leia o peso de cinco pessoas .No final mostre qual foi o m
 056
 Desenvolva um programa que leia o nome, idade e sexo de 4 pessoas . No final do programa mostre :
     .A media de idade do grupo
-    .Qual e o nome do homem mais velhor
+    .Qual e o nome do homem mais velho
     .Quantos mulheres tem menos de 20 anos
