@@ -10,7 +10,7 @@ older_age = []
 minor = []
 for i in range(1,8):
   
-    age = int(input('Digite o ano de seu nascimento : '))
+    age = int(input(f'Digite o ano {i}° de seu nascimento : '))
   
     current_age = current_year - age
 
@@ -23,4 +23,4 @@ for i in range(1,8):
     else:
         minor.append(current_age)
 
-print(f'Existem {len(new)} de pesoas maiores de 18 anos , possue {len(older_age)} pessoas acima de 21 anos é {len(minor)} pessoas menores de idade')
+print(f'Possue {len(older_age)} pessoas acima de 21 anos é {len(minor)} pessoas menores de idade')
