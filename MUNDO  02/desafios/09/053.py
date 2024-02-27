@@ -9,6 +9,8 @@ frase_sem_espacos = ''.join(frase.split())
 
 # Verificando se a frase sem espaços é um palíndromo
 if frase_sem_espacos == frase_sem_espacos[::-1]:
+    print(f'A frase digitada foi {frase}')
     print("A frase é um palíndromo.")
 else:
+    print(f'A frase digitada foi {frase}')
     print("A frase não é um palíndromo.")
