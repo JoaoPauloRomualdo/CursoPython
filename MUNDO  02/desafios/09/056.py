@@ -1,42 +1,33 @@
-# Inicializa as variáveis
+""" 056
+Desenvolva um programa que leia o nome, idade e sexo de 4 pessoas . No final do programa mostre :
+    .A media de idade do grupo
+    .Qual e o nome do homem mais velho
+    .Quantos mulheres tem menos de 20 anos """
+
 soma_idade = 0
-idade_homem_mais_velho = 0
-nome_homem_mais_velho = ""
-quantidade_mulheres_menos_20 = 0
+media_idade = 0
+maior_idade_homem = 0
+nome_velho = ''
+tot_mulher = 0
+for i in range(1,5):
+    print(f'------- {i} Pessoa -------')
+    nome = str(input('Nome : ')).strip()
+    idade = int(input('Idade : '))
+    sexo = str(input('Sexo [ M ] - Masculino , [ F ] - Feminino  ')). strip()
 
-# Loop para coletar informações sobre 4 pessoas
-for i in range(4):
-    print(f"\nDados da {i+1}ª pessoa:")
-    
-    # Coleta o nome
-    nome = input('Digite o nome: ')
-    
-    # Coleta a idade
-    idade = int(input('Digite a idade: '))
-    soma_idade += idade
-    
-    # Coleta o sexo
-    sexo = input('Digite o sexo [M/F]: ').upper()
-    
-    # Verifica se é homem e se é mais velho que o registrado anteriormente
-    if sexo == 'M' and idade > idade_homem_mais_velho:
-        idade_homem_mais_velho = idade
-        nome_homem_mais_velho = nome
-    
-    # Verifica se é mulher com menos de 20 anos
-    if sexo == 'F' and idade < 20:
-        quantidade_mulheres_menos_20 += 1
+    soma_idade+= idade
 
-# Calcula a média de idade
-media_idade = soma_idade / 4
+    if i == 1 and sexo in 'Mm':
+        maior_idade_homem = idade
+        nome_velho = nome
 
-# Exibe os resultados
-print("\nResultados:")
-print(f"Média de idade do grupo: {media_idade:.2f} anos")
+    if sexo in 'Mm' and idade > maior_idade_homem :
+        maior_idade_homem = idade
+        nome_velho = nome
 
-if nome_homem_mais_velho:
-    print(f"Nome do homem mais velho: {nome_homem_mais_velho}")
-else:
-    print("Não há homens no grupo.")
-
-print(f"Quantidade de mulheres com menos de 20 anos: {quantidade_mulheres_menos_20}")
+    if sexo in 'Ff' and idade < 20 :
+        tot_mulher += 1
+media_idade = soma_idade/4
+print(f'A media de idade do grupo e de {media_idade} anos')
+print(f'O homem mais velhor tem {maior_idade_homem} , e o nome dele e {nome_velho}')
+print(f'Ao todo são {tot_mulher} mulheres com menos de 20 anos')
