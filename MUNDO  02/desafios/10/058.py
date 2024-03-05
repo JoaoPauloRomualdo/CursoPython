@@ -2,34 +2,33 @@
 Melhore o jogo do desafio 028 onde o computador vai "pensar" em um numero entre 0 e 10 . So que agora o jogador vai tentar adivinhar ate acertar, mostrando no final quantos palpites foram necessarios para vencer. """
 
 
-import random
+from random import randint
 
 from time import sleep
 
-random_number = random.randint(1, 5)
+computador = randint(0, 10)
 
-tentativas = 0 
+print('-=' * 20)
+print('Sou seu computador ... Acabei de pensar em um número entre 0 e 10 !!!')
+print('Será que você consegue adivinhar qual foi ?')
+print('-=' * 20)
 
-print('Digite um número de 1 a 5 e veja se você adivinhou o numero que a maquina pensou !!')
-while True:
+acertou = False
+tentativas = 0
+while not acertou:
 
-    print('-=' * 20)
-
-    user_number = int(input('AGORA DIGITE UM NUMERO : '))
-
+    jogador = int(input('Qual e seu palpite : '))
+    tentativas+=1
     print('PROCESSANDO ....')
 
     sleep(2)
         #Verifica se o usuario digitou um numero entre 1 ao 5
-    if 1 <= user_number <= 5 :
-        if random_number == user_number :
-            print(f'PARABÉNS ! ! O número que a máquina pensou foi {random_number} e você acertou {user_number}, você precisou de {tentativas} tentativas para acertar')
-            break
-        else :
-            tentativas+=1
-            print(f'A QUE PENA ! !, A maquina pensou no {random_number} e você digitou {user_number}')
-            print('MAIS SORTE DA PROXIMA VEZ !!!')
+    if jogador == computador:
+        acertou = True
+    else:
+        if jogador < computador:
+            print('Pensei em um numero maior , Tente mais uma vez !')
+        elif jogador > computador:
+            print('Pensei em um numero menor, Tente mais uma vez ')
 
-    else :
-
-        print('ATENÇÃO O NÚMERO DEVE SER DE 1 A 5')
+print(f'Acertou com {tentativas} tentativas')
