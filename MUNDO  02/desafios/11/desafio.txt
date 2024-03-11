@@ -1,0 +1,31 @@
+Desafio 066:
+
+Crie um programa que leia varios numeros inteiros pelo teclado. O progama so vai parar quando o usuario digitar o valor 999 que e a condição de padara . No final mostre quantos numeros foram digitados e qual foi a soma entre eles (desconsiderando o flag)
+
+Desafio 067:
+
+Faça um progama que mostre a tabuada de varios numeros um de cade vez para cada valor digitado pelo usuario. O programa sera interrompido quando o numero solicitado for negativo
+
+Desafio 068:
+
+Faça um programa que jogar par ou impar com o computador. O jogo so sera interrompido quando o jogador perder, mostrando o total de vitorias consecutivas que ele conquistou no final do jogo.
+
+Desafio 069 :
+
+Crie um programa que leia a idade e o sexo de varias pessoas . A cada pessoa cadastrada , o programa devera perguntar se o usuario quer ou nao continuar no final mostre:
+    *Quantas pessoas tem mais de 18 anos
+    *Quantos homens foram cadastrados
+    *Quantas mulheres tem menos de 20 anos
+
+Desafio 070:
+
+Crie um programa que leia o nome e o preço de varios produtos.O programa devera perguntar se o usuario quer continuar , No final mostre : 
+    *Qual e o total gasto na compra
+    *Quantos produtos custam mais de R$1000
+    *Qual e o nome do produto mais barato
+
+Desafio 071:
+
+Crie um programa que simule o funcionamento de um caixa eletronico. No inicio pergunte ao usuario qual sera o valor a ser sacado (numero inteiro) e o programa vai informas quantas cedulas de cada valor serao entregue
+
+    obs: considere que o caixa possui cedulas de R$50, R$20, R$10 e R$1
