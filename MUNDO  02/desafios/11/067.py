@@ -7,6 +7,8 @@ Faça um progama que mostre a tabuada de varios numeros um de cade vez para cada
 cont = 0
 while True:
     numero = int(input('Digite o número da tabuada : '))
+    if numero < 0 :
+        break
     cont = 0
     while cont < 10 :
         cont += 1

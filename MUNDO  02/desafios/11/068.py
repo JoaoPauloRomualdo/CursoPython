@@ -17,7 +17,6 @@ def jogo():
     resultado = numeroRandom + usuario
     tentativas = 0
     while True:
-        tentativas +=1
         if resultado % 2 == 0 :
             if escolha == 'I':
                 print('-=-'*15)
@@ -29,6 +28,8 @@ def jogo():
                 print('-=-'*15)
                 break
             else:
+                tentativas +=1
+
                 print('-=-'*15)
                 print()
                 print('Parabéns você ganhou,vamos jogar novamente ')
@@ -48,6 +49,8 @@ def jogo():
                 print('-=-'*15)
                 break
             else:
+                tentativas +=1
+
                 print('-=-'*15)
                 print()
                 print('Parabéns você ganhou, vamos jogar novamente ')

@@ -23,6 +23,7 @@ while True:
     if preco < prodBarato:
         prodBarato = preco
         nomeProdutoBarato = nomeProduto
+        
     while opcao != 's' and opcao != 'n':
         print('Resposta inválida. Por favor, responda com "Sim" ou "Não".')
         opcao = str(input('Deseja cadastrar mais produtos ? [ S ]- SIM / [ N ]- NÃO : ')).strip().lower()
@@ -31,6 +32,7 @@ while True:
     if opcao == 'n':
         break
 
+print('{:-^40}'.format('FIM DO PROGRAMA'))
 print(f'Total gasto R${total:.2f}')
 print(f"Total de produtos acima de R$1000,00 = {prodCaro}")
 print(f'Nome do produto mais barato: {nomeProdutoBarato} (R${prodBarato:.2f})')

@@ -13,8 +13,13 @@ while True:
     print('_'*20)
     print()    
     idade = int(input('Digite sua idade : '))
-    sexo = str(input('Informe seu sexo :  ')).strip().upper()[0]
-    opcao = str(input('Você deseja continuar ? [ SIM ] - [ NÃO ]')).strip().upper()[0]
+    sexo = ' '
+    while sexo not in 'MF':
+        sexo = str(input('Informe seu sexo : [ M ]- [ F ]  ')).strip().upper()[0]
+    
+    opcao = ' '
+    while opcao not in 'SN':
+        opcao = str(input('Você deseja continuar ? [ SIM ] - [ NÃO ]')).strip().upper()[0]
     print()
 
     if opcao == 'S':
