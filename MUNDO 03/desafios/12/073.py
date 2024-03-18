@@ -10,8 +10,8 @@ Crie uma tupla preenchida com os 20 primeiros colocados da tabela do campeonato 
 
 clubes = (
     'PALMEIRAS',
-    'GRÊMIO', 
-    'ATLÉTICO-MG',
+    'GREMIO', 
+    'ATLITICO-MG',
     'FLAMENGO',
     'BOTAFOGO',
     'RED BULL BRAGANTINO',
@@ -19,16 +19,16 @@ clubes = (
     'ATHELETICO-PR',
     'INTERNACIONAL',
     'FORTALEZA',
-    'SÃO PAULO',
-    'CUIABÁ',
+    'SAO PAULO',
+    'CUIABA',
     'CORINTHIANS',
     'CRUZEIRO',
     'VASCO',
     'BAHIA',
     'SANTOS',
-    'GOIÁS',
+    'GOIAS',
     'CORITIBA',
-    'AMÉRICA-MG'
+    'AMErRICA-MG'
 )
 clubes_indexados = tuple(enumerate(clubes, start=1))
 print('-='*30)
@@ -55,7 +55,7 @@ print('-='*30)
 
 for pos,i in clubes_indexados:
     print(f'{pos} - {i}') 
-get_clube = str(input('Digite qual clube você deseja saber sua colocação : ')).upper()[:    3]
+get_clube = str(input('Digite qual clube você deseja saber sua colocação : ')).upper()[:3]
 for pos, clube in clubes_indexados:
     if get_clube in clube:
         print(f'O clube {clube} está na posição {pos}.')
