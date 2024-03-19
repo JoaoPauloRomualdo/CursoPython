@@ -7,6 +7,9 @@ from random import randint
 
 lista_numero =(randint(1,10), randint(1,10), randint(1,10), randint(1,10), randint(1,10))
 
-print(lista_numero)
-print(f' O maior numero gerado na lista foi {max(lista_numero)}')
+print('Os valores soteados foram : ',end='')
+for n in lista_numero:
+    print(f'{n} ',end='')
+
+print(f'\nO maior numero gerado na lista foi {max(lista_numero)}')
 print(f'O menor numero gerado na lista foi {min(lista_numero)}')
