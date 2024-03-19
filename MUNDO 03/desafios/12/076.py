@@ -4,15 +4,13 @@ Crie um programa que tenha um tupla unica com nomes de produtos e seus respectiv
 
 produtos = ('Carretilha', 250.00, 'Vara ', 150.00, 'Caiaque', 5000.00, 'Iscas', 120.00)
 
-nomes_produtos = tuple(i for i in produtos if isinstance(i,str))
-
-valores_produtos = tuple(i for i in produtos if isinstance(i, float))
-
 print('=-'*20)
 print('ITEMS PARA COMPRA'.center(40))
 print('=-'*20)
 
-for pos , p in enumerate(nomes_produtos):
+for pos in range(0, len(produtos)):
+    if pos % 2 == 0:
+        print(f'{produtos[pos]:.<30}',end='')
+    else:
+        print(f'R$ {produtos[pos]:>8.2f}')
         
-    preco = valores_produtos[pos]
-    print(f'{pos} - {p} {"*" * 20} {preco}')
