@@ -1,0 +1,26 @@
+Desafio 078
+
+Faça um programa que leia 5 valores numericos e guarde-os em uma lista, no final mostre qual foi o maior e o menor valor digitado e as respectivas posições na lista
+
+Desafio 079
+
+Crie um programa onde o usuario possa digitar varios valores numericos e cadastre-os em uma lista . Caso o  numero ja exista la dentro, ele nao sera adicionado.No final serão exibidos todoas os valores unicos digitados em ordem crescente.
+
+Desafio 080
+
+Crie um programa onde o usuario possa digitar cinco valores numericos e cadastre-os em uma lista , ja na posição correta de inserção (sem usar o sort()). No final , mostre a lista ordenadas na tela
+
+Desafio 081
+
+Crie um programa que vai ler varios numeros e colocar em uma lista. Depois disso mostre: 
+    * Quantos numeros foram digitados
+    * A lista de valores ordenada de forma decrescente.
+    * Se o valor 5 foi digitado e esta ou nao na lista
+
+Desafio 082
+
+Crie um programa que vai ler varios numeros e colocar em uma lista . Depois disso crie duas listas extras que vao conter apenas os valores pares e os valores impares digitados respectivamente . Ao final mostre o conteudo das tres listas geradas 
+
+Desafio 083
+
+Crie um programa que o usuario digite um expressao qualquer que use parenteses . Seu aplicativo devera analisar se a espressao passada esta com os parenteses abertos e fechado na ordem correta
