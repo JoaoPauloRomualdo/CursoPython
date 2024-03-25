@@ -8,11 +8,11 @@ numeros = []
 while True:
     valor = int(input('Digite um valor : '))
 
-    if valor in numeros :
-        print('Valor ja existente !!!')
-    else :
-        print('Valor adicionado com sucesso !!!')
+    if valor not in numeros :
         numeros.append(valor)
+        print('Valor adicionado com sucesso !!!')
+    else :
+        print('Valor ja existente, não irei adicionar !!!')
 
     resposta = str(input('Deseja continuar ? [ SIM ] - [ NÃO ]: ')).lower()[0]
     while resposta != 'n' and resposta != 's':
@@ -21,4 +21,6 @@ while True:
 
     if resposta == 'n':
         break
-print(sorted(numeros))
+
+print(f'Você digitou os valores {numeros}')
+print(f'Sua lista ordenada sera : {sorted(numeros)}')
