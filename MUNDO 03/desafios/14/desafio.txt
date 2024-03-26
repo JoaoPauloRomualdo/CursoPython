@@ -1,0 +1,30 @@
+Desafio 084: 
+
+Faça um programa que leia nome e peso guardando tudo em uma lista . No final mostre : 
+
+    *Quantas pessoas foramas cadastradas .
+    *Uma lista com pessoas mais pesadas
+    *Uma listagem com as pessoas mais leves
+
+Desafio 085: 
+
+Crie um programa onde o usuario possa digitar sete valores numericos e cadastre-os em uma lista unica que mantenha separados os valores pares e impares . No final mostre os valores pares e impares em ordem crescente
+
+Desafio 086:
+
+Crie um programa que crie uma matriz de dimensao 3 x 3 e preencha com valores lidos pelo teclado , no final mostre a matriz na tela , com a formatação correta.
+
+Desafio 087:
+
+Aprimore o desafio anterior, mostrando no final :
+    *A soma de todos os valores pares
+    *A soma dos valores da terceira coluna
+    *O maior valor da segunda linha 
+
+Desafio 088:
+
+Faça um programa que ajude um jogador da mega sena a criar palpites. O programa vai perguntar quantos jogos serão gerados e vai sortear 6 numeros entre 1 e 60 para cada jogo cadastrando tudo em uma lista composta.
+
+Desafio 089
+
+Crie um programa que leia nome e duas notas de varios alunos e guarde tudo em uma lista composta . No final mostre um boletim contendo a media de cada um e permita que o usuario possa mostrar as notas de cada aluno individualmente
